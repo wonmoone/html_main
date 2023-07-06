@@ -1,0 +1,165 @@
+ @charset "UTF-8";
+
+    /*헤더*/
+    *{margin: 0;}
+    .header{width:100%; height:79px; z-index: 1; position: absolute; margin: 0 auto; position: fixed; background-color: rgba(253, 246, 235, 0.879);} 
+    
+
+
+    /*로고*/
+      #logo{width:125px; height:50px; margin:15px 0 0 30px; float:left;}
+      #logo > img{width:100%; height:100%; background-size:cover;}
+
+        /*메뉴바*/
+        ul,li,ol{list-style: none; margin: 0; padding: 0;}
+
+        a {text-decoration: none;}
+        nav {width: 1000px; position: relative; top: 0; z-index: 2; margin: 20px 0 0 180px;}
+        .menu {width: 1000px; height: 100%; display: flex;}
+        .menu > li {float:left; width:32%;   text-align: center; 
+          transition:all 0.5s ease; line-height: 40px; }
+      .menu > li > a {color:#202020; font-size: 14px; font-weight:600; font-family: 'IBM Plex Sans KR', sans-serif; letter-spacing: 2px;
+      }
+      .menu > li:hover {background-color:rgba(89, 105, 80, 0.486);}
+      .menu > li > a:hover {color:rgb(89, 105, 80); }
+     
+      
+
+
+      .submenu { display: none;}
+      .submenu > li {transition: all 0.5s ease; text-decoration: none;  font-size: 12px;   background-color:rgb(89, 105, 80); font-family: 'IBM Plex Sans KR', sans-serif; letter-spacing: 2px; }
+      .submenu > li > a { color: #fff;}
+      .submenu > li > a:hover {color:#292929; display: block; background-color: rgba(255, 251, 245, 0.884);}
+
+  
+
+
+    /*로그인*/
+    #loginwrap {width:350px; height: 60px; position: absolute; z-index: 0; right: 0; top: 18px;}
+    #loginwrap > #menu{width:40px; height:40px; border:2px solid #000; float: right; margin:0 50px 0 0px;}
+    #loginwrap >#menu >a >img{width:23px; height:23px; margin:8px 0 0 8px;}
+
+    #loginwrap >#login{width:220px; height:20px; margin:15px 2px 0 0px; }
+    #loginwrap > #login >ul >li{float:left;}
+    #loginwrap > #login >ul >li >a{text-decoration:none; color:#000; font-size:15px; font-weight:bold; margin:0 0 0 32px;}
+    #loginwrap > #login >ul >li >a:hover{color:rgb(89, 105, 80);}
+
+      
+
+
+
+
+ /*뉴섹션*/
+    
+    #product{width: 1300px; height: 1270px; margin: 0 auto; } 
+   
+    #title{ font-size:22px; font-weight:bold; text-align: center; padding:70px; color: #292929; font-family: 'IBM Plex Sans KR', sans-serif; letter-spacing: 2px;}
+
+    #product > article >.box{width: 295px; height: 500px;  float: left; }
+    #product > article >.box > div > a >img{width: 100%; height:280px;}
+
+ /*new*/
+     #product > article > .box >h3{color:#d82e2e; font-size:15px; padding:10px 0 0 0px;}
+
+ /*상품명*/
+    #product > article > .box > h4 > a{text-decoration:none; color:#625f5f; font-size:14px; padding:3px 0 0 0px; display:block; line-height: 190%; }
+
+   
+/*원가*/
+    #product > article > .box > h2{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+
+    /*할인전*/
+    #product > article > .box > h5{text-decoration:line-through; color:#625f5f; font-size:14px; padding:5px 0 0 0px;}
+
+     /*할인후*/
+    #product > article > .box > p{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+    #product > article > .box > p > span{font-size:16px; color:#d82e2e; font-weight: bold; width:30px; }
+
+  
+
+    #product > article > .box >h6{font-size:14px; color:#625f5f; margin:10px 0 0 2px;}
+
+    #product > article > .box >h6 >span{color:#f75e5e; font-size:14px;}
+
+    #product > article > .box{margin:0 16px 20px 14px;}
+
+        /*첫번째 배너*/
+      #banner{width:1260px; height:580px; margin:0 auto;}
+      #banner >a >img{width:230px; height: 250px; float: none; margin: 88px 0 0 480px; }
+      #banner >h1{font-size: 25px; font-weight: bold; padding:9px; text-align: center;}
+      #banner >h3{font-size: 13px; line-height: 220%; color: #727272; text-align: center;}
+
+
+      
+        /*두번째 배너*/
+        #banner2{width:1260px; height:1300px; margin:0 auto;}
+        #banner2 >#left{width:630px; height:620px; float: left;}
+        #banner2 >#left >img{width:100%; height:100%;}
+
+        #banner2 >#right{width:630px; height:620px; float: right; background-color:#f8f8f8}
+        #banner2 >#right >h1{font-size: 25px; font-weight: bold; padding:20px; float:right; margin:120px 228px 0 0px;}
+        #banner2 >#right >h3{font-size: 13px; font-weight: bold; line-height: 220%; color: #747474; float:right; margin:0 120px 0 0px;}
+        #banner2 >#right >p >a{font-size: 14px; font-weight: bold; padding:11px; float:right; color:#000; margin:0 442px 0 0px;}
+
+
+        #banner2 >#left1{width:630px; height:620px; float: left; background-color:#f8f8f8}
+        #banner2 >#left1 >h1{font-size: 25px; font-weight: bold; padding:20px; float:right; margin:120px 280px 0 0px;}
+        #banner2 >#left1 >h3{font-size: 13px; font-weight: bold; line-height: 220%; color: #747474; float:right; margin:0 135px 0 0px;}
+        #banner2 >#left1 >p >a{font-size: 14px; font-weight: bold; padding:9px; float:right; color:#000; margin:0 438px 0 0px;}
+
+
+      
+        #banner2 >#right1{width:630px; height:620px; float: right; background-color:hwb(18 39% 5%);}
+        #banner2 >#right1 >img{width:100%; height:100%;}
+
+      
+
+        /*섹션*/
+      section{width: 1300px; height: 2900px; margin: 0 auto; } 
+      section > #besttitle {font-size:22px; padding: 98px; font-weight:bold; text-align: center; color: #292929; font-family: 'IBM Plex Sans KR', sans-serif; letter-spacing: 2px;}
+
+      section > article >.box1{width: 295px; height: 500px;  float: left; }
+      section > article >.box1 > div > a >img{width: 100%; height:280px;}
+
+ /*new*/
+ section > article > .box1 >h3{color:#d82e2e; font-size:15px; padding:10px 0 0 0px;}
+
+ /*상품명*/
+ section > article > .box1 > h4 > a{text-decoration:none; color:#625f5f; font-size:14px; padding:3px 0 0 0px; display:block; line-height: 190%; }
+
+   
+/*원가*/
+section > article > .box1 > h2{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+
+    /*할인전*/
+    section > article > .box1 > h5{text-decoration:line-through; color:#625f5f; font-size:14px; padding:5px 0 0 0px;}
+
+     /*할인후*/
+     section > article > .box1 > p{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+     section > article > .box1 > p > span{font-size:16px; color:#d82e2e; font-weight: bold; width:30px; }
+
+  
+
+     section > article > .box1 >h6{font-size:14px; color:#625f5f; margin:10px 0 0 2px;}
+
+     section > article > .box1 >h6 >span{color:#f75e5e; font-size:14px;}
+
+     section > article > .box1{margin:0 16px 20px 14px;}
+
+      /*하단*/
+      footer{width: 100%; height:589px; background-color: #f8f6f6;} 
+      footer >.box {margin:0 auto; width: 1260px; height:555px;}
+
+      footer >.box >h1{font-weight:bold; padding: 45px; width:280px; height: 35px; font-size: 20px; color: #000; text-decoration: none;}
+      footer >.box >h3{margin: 20px 0 0 45px; width:700px; height: 85px; font-size: 20px; color: #000; text-decoration: none;}
+      footer >.box >h3 >ul >li{font-size: 12px; color: hsl(0, 4%, 22%); float: left; margin:0 20px 0 0px; line-height: 20px;}
+      footer >.box >.box1{width:260px; height:160px; float:left; margin: 20px 35px 0 20px; }
+      footer >.box >.box1 >h5{margin: 0 0 0 30px; font-size:15px; font-weight:bold; line-height:30px; }
+      footer >.box >.box1 >ul >li{margin: 0 0 0 30px; font-size: 12px; color: hsl(0, 4%, 22%); line-height: 23px; font-weight: bold;}
+      footer >.box >#box{width: 1290px; height: 180px; float: left; }
+      
+      footer >.box >#box >ul >li >a{float:left; color: hsl(0, 4%, 22%); font-size: 12px;  text-decoration: none; margin:20px 40px 0 25px; font-weight: bold;}
+      footer >.box >#box >h1{color: hsl(0, 0%, 77%); font-size: 12px; margin:30px 0 0 0px;}
+      footer >.box >#box >#b >a > img{width: 43px; height: 18px; float: right; margin:15px 20px 0 3px;}
+      footer >.box >#box >#i >a > img{width: 10px; height: 20px; float: right; margin:15px 20px 0 0px; }
+      footer >.box >#box >#f >a > img{width: 20px; height: 20px; float: right; margin:15px 9px 0 0px;}

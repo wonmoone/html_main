@@ -1,0 +1,27 @@
+ @charset "UTF-8";
+ *{margin: 0; box-sizing: border-box;}
+
+ #loginpage{width: 900px; height: 700px; background-color: rgb(255, 255, 255); margin: 0 auto; padding: 50px;}
+ #loginbox{width: 800px; height: 450px; background-color: rgb(209, 57, 57); margin: 40px 0 0 0px; border-top:4px solid #d3d1c4dc; border-bottom:4px solid #d3d1c4dc; ; }
+ .loginbox{width: 400px; height: 450px;  padding: 30px; background-color: aqua; float: left;}
+ .loginbox h1{font-size: 18px; font-weight: bold; }
+ .loginbox p{font-size: 12px; line-height: 20px; padding: 20px 0 20px 0px;}
+ .loginbox input[type=text]{width: 300px; height: 38px; padding: 10px; margin: 0 0 7px 0px; border: 1px solid #989898;}
+ .loginbox input[type=password]{width: 300px; height: 38px; padding: 10px; margin: 0 0 10px 0px; border: 1px solid #989898;}
+ .loginbox button{cursor: pointer; width:300px; height: 38px; background-color: #fef7e7; border: none;  }
+ .loginbox button:hover{background-color: #383838; color: #fff;}
+ .loginbox input[type=checkbox]{margin:10px 0 0 0px; width:12px; float:left;}
+ .loginbox label{font-size: 12px; float: left; margin:11px 0 0 5px;}
+ .loginbox span a{font-size: 12px; float: right; margin:11px 42px 0 0px; text-decoration: none; color: #000;}
+ .loginbox span a:hover{text-decoration: underline;}
+ .loginbox h2{font-size: 14px; font-weight: bold; float: left; margin: 35px 0 0 0px;}
+ #iconbox{width:300px; height: 50px;  float: left; margin:20px 0 0 0px;}
+ #iconbox img{width:40px; height: 40px; margin: 0 7px 0 0px; border-radius: 50px; border:1px solid #dadada }
+
+ .loginbox2{width: 390px; height: 450px;  padding: 30px; background-color: rgb(166, 153, 153); float:right;}
+ .loginbox2 h1{font-size: 18px; font-weight: bold; }
+ .loginbox2 p{font-size: 12px; line-height: 20px; padding: 20px 0 20px 0px;}
+ .loginbox2 input[type=text]{width: 300px; height: 38px; padding: 10px; margin: 0 0 7px 0px; border: 1px solid #989898;}
+ .loginbox2 input[type=password]{width: 300px; height: 38px; padding: 10px; margin: 0 0 10px 0px; border: 1px solid #989898;}
+ .loginbox2 button{cursor: pointer; width:300px; height: 38px; background-color: #fef7e7; border: none;  }
+ .loginbox2 button:hover{background-color: #383838; color: #fff;}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+    
+     /*슬라이더*/
+     #wrap {width: 1903px; height: 800px; margin: 0 auto;}
+     #slidewrap {width: 1230px; height: 800px; margin: 0 auto; float: left; overflow: hidden; position: relative; z-index: 0;}
+    
+     .slide {width: 4000px; height: 100%; float: left; }
+     .slide li {width: 1230px; height: 100%; float: left;  }
+     .slide li img {width: 1230px; height: 100%; }
+
+
+     #slidewrap > span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 40px; 
+    background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); z-index: 2;}
+  
+    #slidewrap > span:hover {background: rgba(255,255,255,0.8); color:#000; }
+     .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
+     .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px; }
+
+     #wrap > #newbox{width:673px; height: 800px; float: right; margin:0; background-color:rgb(247, 236, 221); }
+     #wrap > #newbox >h1{font-size:19px; margin:380px 0 0 50px; }
+     #wrap > #newbox >h2{font-size:42px; padding:15px;  margin:0 0 0 30px;}
+     #wrap > #newbox >p{font-size:14px; color:#727272; margin:0 0 0 43px; }
+     #wrap > #newbox >.btn{margin:20px 0 0 43px; background-color:#ede1c2; padding: 12px 42px; font-size:14px; border:0; transition:0.1s;}
+     #wrap > #newbox >.btn:hover{background-color: #5a7058; color: #ffffff; cursor: pointer;}

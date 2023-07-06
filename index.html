@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>온다숲</title>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/ajax_1.js"></script>
+
+
+    <script>
+
+
+
+
+        $(document).ready(function(){
+
+$(function(){
+$(window).scroll(function(){
+    var top=$(window).scrollTop();
+
+    if(top > 800){
+        $('.header').css({'background-color': '#fff'});
+    }else{
+        $('.header').css({'background-color': 'rgba(253, 246, 235, 0.879)'});
+    }
+});
+});
+
+            $(function(){
+        
+                $('.menu > li').mouseover(function(){
+        
+                $(this).children('.submenu').stop().slideDown(500);
+        
+                }).mouseout(function(){
+        
+                $('.submenu').stop().slideUp(300);
+        
+                });
+        
+            });
+        });
+        
+        
+
+        
+        
+            $(document).ready(function(){
+
+                function prev(){
+                $('.slide li:last').prependTo('.slide');
+                $('.slide').css('margin-left',-1230);
+                $('.slide').stop().animate({marginLeft:0});
+            }
+    
+            function next(){
+                $('.slide').stop().animate({marginLeft:-1230}, function(){
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({marginLeft:0})
+                });
+            }
+    
+            function slide(){
+                $('.slide').stop().animate({marginLeft:-1230}, function(){
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({marginLeft:0})
+                });
+            }    
+    
+            setInterval(slide, 3000);
+    
+            $('.prev').click(function(){
+                prev();
+            });
+    
+            $('.next').click(function(){
+                next();
+            });
+
+            });
+
+
+
+
+            
+        </script>
+    
+    </head>
+    <body>
+    
+            
+        <header class="header">
+        
+
+        
+
+
+        
+    
+            <div id=logo>
+                <a href="index.html" target="_self"><img src="img/img_logo.jpg" alt="로고이미지"></a>
+            </div>
+    
+    
+    
+        
+                <nav>
+                <ul class="menu">
+                <li><a href="sub.html" target="_self">편백수 원액</a>
+                <ul class="submenu">
+                    <li><a href="#">베스트 상품</a></li>
+                    <li><a href="#">가정용 원액</a></li>
+                    <li><a href="#">휴대용 원액</a></li>
+                </ul>
+                </li>
+                <li><a href="sub.html" target="_self">계피 원액</a>
+                    <ul class="submenu">
+                        <li><a href="#">베스트 상품</a></li>
+                        <li><a href="#">가정용 원액</a></li>
+                        <li><a href="#">휴대용 원액</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.html" target="_self">천연정화석</a></li>
+                <li><a href="sub.html" target="_self">선물 & 패키지</a>
+                    <ul class="submenu">
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">베스트 상품</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.html" target="_self">용도별 탈취용품</a>
+                    <ul class="submenu">
+                        <li><a href="#">베스트 상품</a></li>
+                        <li><a href="#">패키지 둘러보기</a></li>
+                        <li><a href="#">상품 안내</a></li>
+                        <li><a href="#">용도별 상품</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.html" target="_self">베스트상품</a></li>
+                <li><a href="sub.html" target="_self">제휴/대량구매</a>
+                    <ul class="submenu">
+                        <li><a href="#">상품 문의</a></li>
+                        <li><a href="#">구매안내</a></li>
+                        <li><a href="#">대량구매 안내</a></li>
+                        <li><a href="#">제휴 안내 / 신청</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub.html" target="_self">회사소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">브랜드 소개</a></li>
+                        <li><a href="#">위치 안내</a></li>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                    </ul>
+                </li>
+                </ul>
+                </nav>
+            
+    
+    <div id="loginwrap">
+            <div id="menu">
+                <a href="index.html" target="_self"><img src="img/img_menu.png" alt="메뉴이미지"></a>
+            </div>
+    
+            <div id=login>
+                <ul>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">CART</a></li>
+                </ul>
+            </div>
+    </div>
+    
+            </header>
+            
+            
+            <div id="wrap">   
+            <div id="slidewrap">
+
+            
+            
+                <ul class="slide">
+                    <li><img src="img/main1.jpg" alt="slide image"></li>
+                    <li><img src="img/main2.jpg" alt="slide image"></li>
+                    <li><img src="img/main3.jpg" alt="slide image"></li>
+                
+                </ul>
+
+                <span class="prev">&lt;</span>
+                    <span class="next">&gt;</span>
+                
+        
+        
+        </div>
+
+    <div id="newbox">
+                <h1>NEW ARRIVAL</h1>
+                <h2>맑고맑은<br>계피원액 스프레이</h2>
+                <p>건강하고 안전하게 자연의 힘으로 벌레 퇴치와 탈취를 한번에 해결 하세요.</p>
+                <button class="btn">SHOP NOW</button>
+        
+        </div>
+            </div>
+                    
+            
+
+
+
+    
+    
+    
+        
+            <div id="product">
+                <h3 id="title">신상제품</h3>
+                <article>
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                    <div class="box"></div>
+        
+                </article>
+                </div>
+
+
+            
+
+        
+
+
+
+
+    <div id="banner">
+        <a href="sub.html" target="_self"><img src="img/img_banner.jpg" alt="첫번째 슬라이드"></a>
+        <h1>Natural Products</h1>
+        <h3>(주)온다숲<br>
+            산+언덕+물+바람이 이루는 숲의 이름과 같이 자연을 토대로 여러분의 쾌적한 공간과<br>
+            건강한 생활을 위해 노력하는 "숲이 내게로 온다. 온다숲" 입니다.</h3>
+    </div>
+
+
+    <div id="banner2">
+
+        <div id="left">
+        <img src="img/img_banner2(1).gif" alt="두번째 슬라이드"></div>
+
+        <div id="right">
+            <h1>국내산 100% 천연정화석</h1>
+            <h3>자연 그대로 놓아만 두세요.<br>
+                천연광물질의 자연 돌맹이가 스스로 쾌적한 실내공간을 만들어줍니다.<br>
+                건강한 삶은 좋은 제품에서부터 시작합니다.</h3>
+                <p><a href="sub.html" target="_self">View More</a></p>
+            </div>
+
+        <div id="left1">
+            <h1>100% 편백오일원액</h1>
+            <h3>어떤것도 넣지 않았습니다.<br>
+                어떤것도 빼지 않았습니다.<br>
+                편백나무 숲에 온것처럼 진한 편백의 향을 느낄 수 있는 진한 오일.<br>
+                스트레스와 불안감등이 밀려오거나 상쾌한 느낌을 받고 싶다면<br> 이제 온다숲 할때입니다.</h3>
+                <p><a href="sub.html" target="_self">View More</a></p>
+        </div>
+
+        
+
+        <div id="right1"><img src="img/img_banner2.gif" alt="두번째 슬라이드"></div>
+
+    </div>
+
+    
+
+
+        <section>
+        
+        
+                <h3 id="besttitle">베스트 제품</h3>
+            <article>
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+                <div class="box1"></div>
+        
+        
+                </article>
+            
+
+
+            
+        </section>
+
+    <footer>
+        <div class="box">
+            <h1>온다숲 사업자 정보</h1>
+            <h3>
+                <ul>
+                    <li>회사 : (주)아이앤디디</li>
+                    <li>사업자번호 : 840-87-01960</li>
+                    <li>[사업자정보확인]</li>
+                    <li> 통신판매신고번호 : 제2020-서울강북-1048호</li>
+                    <li>전화 : 070-7424-7711</li>
+                    <li>팩스 : 02-2252-5264</li>
+                    <li>이메일 : ondasoop@ondasoop.com</li>
+                    <li>주소 : 서울특별시 강북구 한천로 1071 (수유동) 태양빌딩 5층</li>
+                </ul>
+            </h3>
+            <div class="box1">
+                <h5>CS CENTER<br>
+                    070-7424-7711</h5>
+                <ul>
+                    <li>상담시간 : MON-FRI AM10-PM5</li>
+                    <li>점심시간 : PM12-PM1</li>
+                    <li>주말,공휴일 휴무</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>NOTICE</h5>
+                <ul>
+                    <li>[안내] 100% 환불 규정 안내</li>
+                    <li>[이벤트] 온다숲 네이버페이 이벤트</li>
+                    <li>[자주묻는질문] 온다숲 회원등급</li>
+                    <li>[자주묻는질문] 적립금 소멸</li>
+                    <li>[자주묻는질문] 주문/입금 관련</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>BANK INFO.</h5>
+                <ul>
+                    <li>하나은행 579-910007-50604</li>
+                    <li>(주)아이앤디디</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>DELIVERY</h5>
+                <ul>
+                    <li>택배반송주소</li>
+                    <li>서울특별시 노원구 동일로245길 162 <br>(상계동, 은빛1단지아파트)</li>
+                    <li>대한통운 상계은빛점 (주)온다숲</li>
+                    <li>[ 택배사 바로가기 ]</li>
+                </ul>
+            </div>
+            <div id="box">
+                <h1>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+                
+                <div id="b"><a href="#"><img src="img/img_blog.png" alt="블로그 아이콘"></a></div>
+                <div id="f"><a href="#"><img src="img/img_instagram.png" alt="페이스북 아이콘"></a></div>
+                <div id="i"><a href="#"><img src="img/img_facebook.png" alt="인스타 아이콘"></a></div>
+            
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    </body>
+</html>
